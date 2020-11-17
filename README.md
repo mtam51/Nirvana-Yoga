@@ -1,2 +1,9 @@
 # Nirvana_Yoga
- MDIA 4590 - Final Project Repository
+
+ This is the repository for MDIA 4590 - Final Project. 
+
+ PROJECT NAME: Nirvana Yoga Academy 
+
+ PROJECT MEMBERS: Gayoung Park, Jaquelin Najera, Michael Tam
+
+
