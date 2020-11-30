@@ -9,6 +9,9 @@
 		@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+		body{
+			width: 100vw;
+		}
 		/* Nav bar */
 		#nirvana-nav{
 			padding: 0 16px;
@@ -216,7 +219,7 @@
 			font-size: 1.5em;
 			margin: 15px auto;
 		}
-		.our-instructorss p{
+		.our-instructors p{
 			font-family: 'Montserrat', sans-serif;
 			color: grey;
 			font-size: 16px;
@@ -232,6 +235,40 @@
 			border-radius: 50%;
 		}
 
+
+		.extra-jumbo img{
+			width: 100%;
+		}
+		.extra-info{
+			text-align: center;
+		}
+		.extra-info h4{
+			font-family: 'Playfair Display', serif;
+			font-weight: 700;
+			font-size: 1em;
+			margin: 15px auto;
+		}
+		.extra-info p{
+			font-family: 'Montserrat', sans-serif;
+			color: grey;
+			font-size: 16px;
+		}
+		.extra-container{
+			align-items: center;
+			padding: 0 60px;
+			margin-top: -80px;
+			margin-bottom: 100px;
+		}
+		.box{
+			padding: 30px 20px;
+			margin: 0 40px;
+		}
+		.extra-icon{
+			margin: auto auto;
+			justify-content: space-around;
+			margin-bottom: 20px;
+			border-radius: 50%;
+		}
 	</style>
 </head>
 <body>
@@ -277,19 +314,19 @@
 		<h2>Our Main Services</h2>
 		<div class="container three-main-services">
 			<div class="row">
-				<div class="service-1 col-md-4">
+				<div class="service-1 col-md-3">
 					<div class="service-img">
 						<img class="service-icon" width="130" height="130" src="img/icons/yoga-classes.svg">
 					</div>
 					<h3>Yoga Classes</h3>
 				</div>
-				<div class="service-2 col-md-4">
+				<div class="service-2 col-md-3">
 					<div class="service-img">
 						<img class="service-icon" width="130" height="130" src="img/icons/nutrition.svg">
 					</div>
 					<h3>Nutrition</h3>
 				</div>
-				<div class="service-3 col-md-4">
+				<div class="service-3 col-md-3">
 					<div class="service-img">
 						<img class="service-icon" width="130" height="130" src="img/icons/spa-therapy.svg">
 					</div>
@@ -367,25 +404,56 @@
 		<h2>Our Instructors</h2>
 		<div class="container three-instructors">
 			<div class="row">
-				<div class="class-1 col-md-4">
+				<div class="col-md-4">
 					<img class="instructor-img" width="200" height="200" src="img/instructors/instructor-1.jpg">
 					<div class="instructors-info">
 						<h3>Anna Scott</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</div>
 				</div>
-				<div class="class-1 col-md-4">
+				<div class="col-md-4">
 					<img class="instructor-img" width="200" height="200" src="img/instructors/instructor-2.jpg">
 					<div class="instructors-info">
 						<h3>Jen Sidney</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</div>
 				</div>
-				<div class="class-1 col-md-4">
+				<div class="col-md-4">
 					<img class="instructor-img" width="200" height="200" src="img/instructors/instructor-3.jpg">
 					<div class="instructors-info">
 						<h3>Andrew Barry</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="extra-info">
+		<div class="container-fluid p-0 extra-jumbo">
+			<img src="img/extra/extra-info.jpg">
+		</div>
+	    <div class="container-fluid extra-container">
+			<div class="row justify-content-center">
+				<div class="box col-md-3 bg-light">
+					<img class="extra-icon" width="130" height="130" src="img/icons/products.svg">
+					<div class="extra-content">
+						<h4>Products</h4>
+						<p>We are committed to offering the best quality products that promote holistic living, meditation, and spiritual wellness.</p>
+					</div>
+				</div>
+				<div class="box col-md-3 bg-light">
+					<img class="extra-icon" width="130" height="130" src="img/icons/newsletter.svg">
+					<div class="extra-content">
+						<h4>Newsletter</h4>
+						<p>Sign up with your email address to be the first to know our important studio update, events, and exclusive offers. You don’t want to miss out!</p>
+					</div>
+				</div>
+				<div class="box col-md-3 bg-light">
+					<img class="extra-icon" width="130" height="130" src="img/icons/appointment.svg">
+					<div class="extra-content">
+						<h4>Appointments</h4>
+						<p>Take your yoga practice wherever you go, and even download classes to view offline.</p>
 					</div>
 				</div>
 			</div>
