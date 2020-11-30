@@ -10,7 +10,7 @@
 		@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 		body{
-			width: 100vw;
+			width: 100%;
 		}
 		/* Nav bar */
 		#nirvana-nav{
@@ -87,7 +87,6 @@
 			font-size: 1.5em;
 		}
 		.three-main-services{
-			align-items: center;
 			margin-top: 50px;
 		}
 		.service-img{
@@ -144,6 +143,7 @@
 			background-color: #f9f4f0;
 		}
 		.why-us-cta{
+			align-self: center;
 			padding: 100px 60px;
 		}
 		.why-us-cta h2{
@@ -164,13 +164,9 @@
 			border-radius: 0;
 			padding: 10px 40px;
 		}
-		.why-us-img{
-			display: block;
-			background-image: url("./img/why-us/why-nirvana.jpg");
-			background-size: cover;
-			background-attachment: scroll;
-			background-position: center center;
-			background-repeat: no-repeat;
+		.why-us-img img{
+			width: 100%;
+			height: 100%;
 		}
 
 
@@ -255,19 +251,73 @@
 		}
 		.extra-container{
 			align-items: center;
-			padding: 0 60px;
+			padding: 0 30px;
 			margin-top: -80px;
 			margin-bottom: 100px;
 		}
 		.box{
 			padding: 30px 20px;
-			margin: 0 40px;
+			margin: 40px;
 		}
 		.extra-icon{
 			margin: auto auto;
 			justify-content: space-around;
 			margin-bottom: 20px;
 			border-radius: 50%;
+		}
+
+
+		.footer-left p{
+			margin-top: 24px;
+			width: 50%;
+			color: #fff;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 16px;
+		}
+		.footer-social-icons img{
+			margin: 30px 10px 10px 10px;
+		}
+		.footer-right{
+			padding-top: 40px;
+			text-align: center;
+			color: #fff;
+		}
+		.footer-right h4{
+			font-family: 'Playfair Display', serif;
+			font-weight: 700;
+			font-size: 1em;
+			margin-bottom: 15px;
+		}
+		.footer-right ul{
+			list-style: none;
+			padding: 0;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 16px;
+		}
+		.footer-right p{
+			font-family: 'Montserrat', sans-serif;
+			font-size: 16px;
+		}
+		.footer-menu{
+			margin-right: 24px;
+		}
+
+		@media screen and (max-width: 600px) {
+			.footer-left, .footer-right{
+				text-align: center;
+			}
+			.footer-right{
+				margin-left: 24px;
+			}
+			.footer-left p{
+				width: 100%;
+			}
+			.footer-social-icons{
+				text-align: center;
+			}
+			.footer-menu{
+				margin-right: 0px;
+			}
 		}
 	</style>
 </head>
@@ -314,19 +364,19 @@
 		<h2>Our Main Services</h2>
 		<div class="container three-main-services">
 			<div class="row">
-				<div class="service-1 col-md-3">
+				<div class="service-1 col-md-4">
 					<div class="service-img">
 						<img class="service-icon" width="130" height="130" src="img/icons/yoga-classes.svg">
 					</div>
 					<h3>Yoga Classes</h3>
 				</div>
-				<div class="service-2 col-md-3">
+				<div class="service-2 col-md-4">
 					<div class="service-img">
 						<img class="service-icon" width="130" height="130" src="img/icons/nutrition.svg">
 					</div>
 					<h3>Nutrition</h3>
 				</div>
-				<div class="service-3 col-md-3">
+				<div class="service-3 col-md-4">
 					<div class="service-img">
 						<img class="service-icon" width="130" height="130" src="img/icons/spa-therapy.svg">
 					</div>
@@ -378,7 +428,9 @@
 						<button type="button" class="btn nirvana-btn">Learn More</button>
 					</div>
 				</div>
-				<div class="why-us-img col-md-6"></div>
+				<div class="why-us-img col-md-6 p-0">
+					<img src="img/why-us/why-nirvana.jpg">
+				</div>
 			</div>
 			<div class="row">
 				<div class="class-content col-md-3">
@@ -459,6 +511,43 @@
 			</div>
 		</div>
 	</div>
+
+	<footer class="bg-dark p-4">
+		<div class="row">
+			<div class="footer-left col-md-6">
+				<img class="footer-logo" src="img/logo.svg" width="120" height="75" alt="Nirvana Yoga Studio">
+				<p>A community of inspired professionals united by our love of achieving a healthy life and inspiring one another to pursue balance of mind and body.</p>
+				<div class="footer-social-icons">
+					<img src="img/social-media/twitter.png" width="30" height="30">
+					<img src="img/social-media/facebook.png" width="30" height="30">
+					<img src="img/social-media/instagram.png" width="30" height="30">
+				</div>
+			</div>
+			<div class="footer-right col-md-6">
+				<div class="row justify-content-center footer-menu">
+					<div class="footer-1 col-sm-4">
+						<h4>About</h4>
+						<ul>
+							<li>Our Story</li>
+							<li>Hours</li>
+							<li>Careers</li>
+						</ul>
+					</div>
+					<div class="footer-2 col-sm-4">
+						<h4>Help</h4>
+						<ul>
+							<li>Contact us</li>
+							<li>FAQ</li>
+						</ul>
+					</div>
+					<div class="footer-3 col-sm-4">
+						<h4>Location</h4>
+						<p>123-5687 Mapple Street, Vanouver BC V5F 5J1</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
