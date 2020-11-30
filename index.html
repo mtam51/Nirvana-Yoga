@@ -6,6 +6,9 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+
 		/* Nav bar */
 		#nirvana-nav{
 			padding: 0 16px;
@@ -33,12 +36,40 @@
 		.navbar-toggler:focus{
 			outline: none;
 		}
+
+		.jumbotron{
+			background-image: url("./img/jumbo/Yoga_jumbo.jpg");
+			background-size: cover;
+			background-attachment: scroll;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+		.jumbo-content{
+			margin-left: 5%;
+		}
+		.jumbo-heading{
+			font-family: 'Playfair Display', serif;
+			font-weight: 700;
+			font-size: 3em;
+		}
+		.jumbo-subheading{
+			font-family: 'Playfair Display', serif;
+			font-weight: 400;
+			font-size: 2em;
+			margin: 30px 0;
+		}
+		.nirvana-jumbo-btn{
+			background-color: #c6d498;
+			border-radius: 0;
+			padding: 10px 40px;
+			margin-bottom: 200px;
+		}
 	</style>
 </head>
 <body>
-	<nav id="nirvana-nav" class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+	<nav id="nirvana-nav" class="navbar navbar-expand-md navbar-light sticky-top bg-light">
       <a class="navbar-brand" href="#top">
-        <img src="img/logo.svg" width="200" height="100" alt="Nirvana Yoga Studio">
+        <img src="img/logo.svg" width="190" height="90" alt="Nirvana Yoga Studio">
       </a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,6 +93,16 @@
         </ul>
       </div>
     </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+	  <div class="container-fluid">
+	  	<div class="jumbo-content">
+		    <h1 class="jumbo-heading">Yoga is for everyone<br>and every body.</h1>
+		    <h2 class="jumbo-subheading">Classes for all ages.</h2>
+		    <button type="button" class="btn nirvana-jumbo-btn">Learn More</button>
+		</div>
+	  </div>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
