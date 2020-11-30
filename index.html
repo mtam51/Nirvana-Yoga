@@ -113,7 +113,7 @@
 			font-family: 'Playfair Display', serif;
 			font-weight: 700;
 			font-size: 1.5em;
-			margin-bottom: 15px;
+			margin: 15px auto;
 		}
 		.our-classes h4{
 			font-family: 'Playfair Display', serif;
@@ -162,11 +162,42 @@
 			padding: 10px 40px;
 		}
 		.why-us-img{
-			background-image: url("./img/why-us/why-nirvina.jpg");
+			display: block;
+			background-image: url("./img/why-us/why-nirvana.jpg");
 			background-size: cover;
 			background-attachment: scroll;
 			background-position: center center;
 			background-repeat: no-repeat;
+		}
+
+
+		.class-content{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			background-color: #96d9c6;
+			color: #fff;
+			text-align: center;
+			padding: 100px 60px;
+		}
+		.class-content h3{
+			font-family: 'Playfair Display', serif;
+			font-weight: 700;
+			font-size: 1.5em;
+			margin-bottom: 30px;	
+		}
+		.class-content p{
+			font-family: 'Montserrat', sans-serif;
+			font-size: 16px;
+		}
+		.class-img{
+			padding: 0;
+			margin: 0;
+		}
+		.class-img img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 	</style>
 </head>
@@ -278,6 +309,23 @@
 					</div>
 				</div>
 				<div class="why-us-img col-md-6"></div>
+			</div>
+			<div class="row">
+				<div class="class-content col-md-3">
+					<h3>Yoga Professional Classes</h3>
+					<p>Weekdays and Weekends</p>
+				</div>
+				<div class="class-img col-md-3">
+					<img src="img/why-us/professional-classes.jpg">
+				</div>
+
+				<div class="class-content col-md-3">
+					<h3>Meditation Center Open Everyday</h3>
+					<p>From 9:00 AM - 8:00 PM</p>
+				</div>
+				<div class="class-img col-md-3">
+					<img src="img/why-us/meditation.jpg">
+				</div>
 			</div>
 		</div>
 	</div>
