@@ -64,6 +64,37 @@
 			padding: 10px 40px;
 			margin-bottom: 200px;
 		}
+
+		.main-services{
+			background-color: #f9f4f0;
+			padding: 100px;
+			text-align: center;
+		}
+		.main-services h2{
+			font-family: 'Playfair Display', serif;
+			font-weight: 700;
+			font-size: 2.5em;
+		}
+		.main-services h3{
+			font-family: 'Playfair Display', serif;
+			font-weight: 700;
+			font-size: 1.5em;
+		}
+		.three-main-services{
+			align-items: center;
+			margin-top: 50px;
+		}
+		.service-img{
+			margin: auto auto;
+			width: 200px;
+			height: 200px;
+			background-color: #f2f2f4;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			margin-bottom: 30px;
+		}
 	</style>
 </head>
 <body>
@@ -102,6 +133,32 @@
 		    <button type="button" class="btn nirvana-jumbo-btn">Learn More</button>
 		</div>
 	  </div>
+	</div>
+
+	<div class="main-services">
+		<h2>Our Main Services</h2>
+		<div class="container three-main-services">
+			<div class="row justify-content-center">
+				<div class="service-1 col-md-4">
+					<div class="service-img">
+						<img class="service-icon" width="130" height="130" src="img/icons/yoga-classes.svg">
+					</div>
+					<h3>Yoga Classes</h3>
+				</div>
+				<div class="service-2 col-md-4">
+					<div class="service-img">
+						<img class="service-icon" width="130" height="130" src="img/icons/nutrition.svg">
+					</div>
+					<h3>Nutrition</h3>
+				</div>
+				<div class="service-3 col-md-4">
+					<div class="service-img">
+						<img class="service-icon" width="130" height="130" src="img/icons/spa-therapy.svg">
+					</div>
+					<h3>Spa Therapy</h3>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
