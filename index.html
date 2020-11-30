@@ -4,9 +4,64 @@
 	<title>Nirvana Yoga Studio</title>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<style>
+		/* Nav bar */
+		#nirvana-nav{
+			padding: 0 16px;
+		}
+		.navbar-light .navbar-toggler{
+			border-color: rgba(0, 0, 0, 0);
+		}
+		.navbar-expand-md .navbar-collapse{
+			justify-content: flex-end;
+		}
+		.navbar ul.navbar-nav li {
+		    text-align: center;
+		}
+		.navbar-brand{
+			padding: 0;
+		}
+		.btn-custom{
+			padding: 10px 12px;
+			margin: 0 5px;
+			border-radius: 100px;
+			background-color: #FFBF05 !important;
+			border-color: #FFBF05 !important;
+			color: #FFFFFF !important;
+		}
+		.navbar-toggler:focus{
+			outline: none;
+		}
+	</style>
 </head>
 <body>
-	<
+	<nav id="nirvana-nav" class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+      <a class="navbar-brand" href="#top">
+        <img src="img/logo.svg" width="200" height="100" alt="Nirvana Yoga Studio">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav" data-app-modern-menu="true">
+          <li class="nav-item">
+            <a class="nav-link link text-black">Services</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link text-black">Classes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link text-black">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link text-black">Instructors</a>
+          </li>	
+        </ul>
+      </div>
+    </nav>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
