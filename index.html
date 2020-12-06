@@ -10,12 +10,14 @@
 		@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+		/* Global */
 		html{
 			scroll-behavior: smooth;
 		}
 		body{
 			width: 100%;
 		}
+
 		/* Nav bar */
 		#nirvana-nav{
 			padding: 0 16px;
@@ -44,7 +46,7 @@
 			outline: none;
 		}
 
-
+		/* Jumbotron section */
 		.jumbotron{
 			background-image: url("./img/jumbo/Yoga_jumbo.jpg");
 			background-size: cover;
@@ -74,7 +76,7 @@
 			margin-bottom: 200px;
 		}
 
-
+		/* Main services section */
 		.main-services{
 			background-color: #f9f4f0;
 			padding: 100px;
@@ -105,7 +107,7 @@
 			margin-bottom: 30px;
 		}
 
-
+		/* Our classes section */
 		.our-classes{
 			padding: 100px;
 			text-align: center;
@@ -142,7 +144,7 @@
 			margin-bottom: 20px;
 		}
 
-
+		/* Why Us section*/
 		.why-us{
 			background-color: #f9f4f0;
 		}
@@ -172,8 +174,7 @@
 			width: 100%;
 			height: 100%;
 		}
-
-
+		/* Other class info under why us section */
 		.class-content{
 			display: flex;
 			flex-direction: column;
@@ -203,7 +204,7 @@
 			object-fit: cover;
 		}
 
-
+		/* Out instructors section */
 		.our-instructors{
 			padding: 100px;
 			text-align: center;
@@ -235,7 +236,7 @@
 			border-radius: 50%;
 		}
 
-
+		/* Jumbotron section below the instructor section */
 		.extra-jumbo img{
 			width: 100%;
 		}
@@ -270,7 +271,7 @@
 			border-radius: 50%;
 		}
 
-
+		/* Footer section */
 		.footer-left p{
 			margin-top: 24px;
 			width: 50%;
@@ -306,6 +307,7 @@
 			margin-right: 24px;
 		}
 
+		/* For viewport width smaller than 800px */
 		@media screen and (max-width: 800px) {
 			.col-md-4{
 				padding: 0;
@@ -542,7 +544,7 @@
 
 	<footer class="bg-dark p-4">
 		<div class="row">
-			<div class="footer-left col-md-6">
+			<div class="footer-left col-md-6 p-4">
 				<img class="footer-logo" src="img/logo.svg" width="120" height="75" alt="Nirvana Yoga Studio">
 				<p>A community of inspired professionals united by our love of achieving a healthy life and inspiring one another to pursue balance of mind and body.</p>
 				<div class="footer-social-icons">
@@ -579,6 +581,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Active Link JS -->
     <script type="text/javascript" src="js/active-menu.js"></script>
 </body>
 </html>
