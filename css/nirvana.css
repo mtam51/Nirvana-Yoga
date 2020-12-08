@@ -168,7 +168,8 @@
 		}
 		.why-us-img img{
 			width: 100%;
-			height: auto;
+			height: 100%;
+			object-fit: cover;
 		}
 		/* Other class info under why us section */
 		.class-content{
